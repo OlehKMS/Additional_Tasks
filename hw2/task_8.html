@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>Task_8</title>
+</head>
+<body>
+   <h1>Розробити програму (не використовувати if), яка за номером року Y визначає номер століття C (врахувати, що початком XX століття був 1901, а не 1900 рік). 
+   </h1>
+   <script>
+const minNumber = 1
+const maxNumber = 2023
+
+const randomYear = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+
+let century = Math.ceil(randomYear/100)
+
+console.log(randomYear);
+console.log(century);
+   </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>task_5</title>
+</head>
+
+<body>
+   <h1>Визначити, яку платню одержить на фірмі сумісник за виконану роботу, якщо йому нараховано S грн., а податок
+      становить 20%.</h1>
+   <script>
+      const tax = 0.2
+      const salary = parseInt(prompt("ваша платня за роботу"))
+      let salaryClean = Math.round(salary * (1-tax))
+      alert(salaryClean);
+   </script>
+</body>
+
+</html>

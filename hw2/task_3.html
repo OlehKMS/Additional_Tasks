@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>task_3</title>
+</head>
+
+<body>
+   <h1 id="text">З клавіатури вводяться вартість одиниці та кількість одиниць двох товарів. Вивести на екран вартість кожного з видів товарів окремо і загальну вартість.
+
+
+   </h1>
+   <script>
+      const product_X2 = parseInt(prompt('кількість товарів'))
+      const price_X2 = parseInt(prompt('вартість двох товарів'))
+
+      let summaX1 = (product_X2 * price_X2) / 2
+      let summaAll = (product_X2 * price_X2)
+
+      let result  = document.write(`Сума кожного ${summaX1} . Загальна сума${summaAll}`)
+      
+
+   </script>
+</body>
+
+</html>

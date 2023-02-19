@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>task_7</title>
+</head>
+
+<body>
+   <h1>Скласти алгоритм, який обчислює цілу і дробову частину даного числа х. Наприклад: число 23,56 => ціла: 23,
+      дробова: 0,56.
+   </h1>
+   <script>
+      let randomNumber = (Math.random() * 100).toFixed(2)
+      let whole = Math.floor(randomNumber)
+      let remainder = (randomNumber - whole).toFixed(2)
+document.write(`основное число ${randomNumber} <br>`)
+document.write(`целое число ${whole} <br>`)
+document.write(`дробь число ${remainder} <br>`)
+      
+
+   </script>
+</body>
+
+</html>

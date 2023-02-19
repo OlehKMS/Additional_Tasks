@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Task_4</title>
+</head>
+
+<body>
+  <h1 id="text">З клавіатури вводиться вік дитини. Вивести на екран через скільки років вона буде відвідувати садочок,
+    піде у школу, закінчить школу, вступить і закінчить
+
+
+  </h1>
+  <script>
+    const ageUser = parseInt(prompt('Enter your age'))
+
+    let result
+
+    const kinderGartenStart = 3
+    let kinderGartenEnd = 6
+    const schoolStart = 7
+    let schoolEnd = 18
+    const univerStart = 19
+    let univerEnd = 24
+    if (ageUser >= kinderGartenStart && ageUser <= kinderGartenEnd) {
+      result = kinderGartenEnd - ageUser
+      document.write(`будет ходить в садик еще ${result}  `)
+      document.write(`в школу пойдет через ${schoolStart - ageUser}  `)
+      document.write(`школу закончит через ${schoolEnd - ageUser}  `)
+      document.write(`в универ пойдет через ${univerStart - ageUser}  `)
+      document.write(`универ закончит через ${univerEnd - ageUser}  `)
+    }
+    else if (ageUser < kinderGartenStart) {
+      result = kinderGartenStart - ageUser
+      document.write(`піде до садику через ${result}`)
+      document.write(`в школу пойдет через ${schoolStart - ageUser}  `)
+      document.write(`школу закончит через ${schoolEnd - ageUser}  `)
+      document.write(`в универ пойдет через ${univerStart - ageUser}  `)
+      document.write(`универ закончит через ${univerEnd - ageUser}  `)
+    }
+    else if (ageUser == schoolStart) {
+      document.write(`пора в школу`)
+      document.write(`школу закончит через ${schoolEnd - ageUser}  `)
+      document.write(`в универ пойдет через ${univerStart - ageUser}  `)
+      document.write(`универ закончит через ${univerEnd - ageUser}  `)
+    }
+    else if (ageUser > schoolStart && ageUser < schoolEnd) {
+      result = schoolEnd - ageUser
+      document.write(`будет ходить в школу ещё ${result}`)
+      document.write(`в универ пойдет через ${univerStart - ageUser}  `)
+      document.write(`универ закончит через ${univerEnd - ageUser}  `)
+    }
+    else if (ageUser == schoolEnd) {
+      document.write(`Пора в универ   `)
+      document.write(`универ закончит через ${univerEnd - ageUser}  `)
+    }
+    else if (ageUser >= univerStart && ageUser < univerEnd) {
+      document.write(`универ закончит через ${univerEnd - ageUser}  `)
+    }
+    else{
+      document.write(`Введите свой возраст используя только цифры  `)
+    }
+
+
+  </script>
+</body>
+
+</html>
