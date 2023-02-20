@@ -17,7 +17,8 @@ const maxNumber = 2023
 const randomYear = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
 
 let century = Math.ceil(randomYear/100)
-
+document.write(`<div class="main"><h2>${randomYear}</h2><br> </div>`)
+document.write(`<div class="main"><h2>${century}</h2><br> </div>`)
 console.log(randomYear);
 console.log(century);
    </script>

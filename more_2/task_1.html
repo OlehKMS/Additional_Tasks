@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>Task_1</title>
+</head>
+
+<body>
+   <h1 id="text">Дано ширину екрана та кількість елементів, які повинні бути відображені у рядку. Визначити ширину
+      елементів, які
+      повинні бути відображені у цьому рядку.
+   </h1>
+   <script>
+
+      const screenWidth = window.screen.width //ПОЛУЧАЕМ Ширину экрана
+      document.write(`<div class="main">${screenWidth}<br> </div>`)
+      // const screenHeight = window.screen.height  // для высоты
+      let textWidth = document.getElementById('text')//.offsetWidth испол. для показа ширины блока
+      const textLenght = textWidth.textContent.length  //обрашаеися к блоку его текста внутри и длинны
+      document.write(`<div class="main"><h2>${textLenght}</h2><br> </div>`)
+   </script>
+</body>
+
+</html>
