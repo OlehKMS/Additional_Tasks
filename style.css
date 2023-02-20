@@ -12,6 +12,10 @@ body {
 h1{
    text-align: center;
 }
+.tittle_h1{
+   text-transform: uppercase;
+   color: rgba(222, 11, 11, 0.983);
+}
 ol{
    display: flex;
    flex-direction: column;
